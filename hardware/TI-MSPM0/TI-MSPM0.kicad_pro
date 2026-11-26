@@ -282,6 +282,70 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "line_style": 0,
+        "name": "GND",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(75, 75, 75)",
+        "tuning_profile": ""
+      },
+      {
+        "line_style": 0,
+        "name": "I2C",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 5,
+        "schematic_color": "rgb(255, 207, 97)",
+        "tuning_profile": ""
+      },
+      {
+        "line_style": 0,
+        "name": "OSC",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
+        "schematic_color": "rgb(146, 55, 255)",
+        "tuning_profile": ""
+      },
+      {
+        "line_style": 0,
+        "name": "PWR",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 6,
+        "schematic_color": "rgb(255, 55, 75)",
+        "tuning_profile": ""
+      },
+      {
+        "line_style": 0,
+        "name": "SW",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgb(55, 235, 255)",
+        "tuning_profile": ""
+      },
+      {
+        "line_style": 0,
+        "name": "UART",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgb(255, 55, 227)",
+        "tuning_profile": ""
+      },
+      {
+        "line_style": 0,
+        "name": "USB",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 7,
+        "schematic_color": "rgb(84, 255, 55)",
+        "tuning_profile": ""
+      },
+      {
+        "line_style": 0,
+        "name": "VREF",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgb(255, 140, 55)",
+        "tuning_profile": ""
       }
     ],
     "meta": {
@@ -289,7 +353,48 @@
     },
     "net_colors": {},
     "netclass_assignments": {},
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "USB",
+        "pattern": "/USB*"
+      },
+      {
+        "netclass": "I2C",
+        "pattern": "/I*"
+      },
+      {
+        "netclass": "OSC",
+        "pattern": "/R*"
+      },
+      {
+        "netclass": "OSC",
+        "pattern": "/HF*"
+      },
+      {
+        "netclass": "SW",
+        "pattern": "/SW*"
+      },
+      {
+        "netclass": "SW",
+        "pattern": "/N*"
+      },
+      {
+        "netclass": "VREF",
+        "pattern": "/V*"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "/UART*"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "*V*"
+      },
+      {
+        "netclass": "GND",
+        "pattern": "*GND"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -432,7 +537,7 @@
         "uuid": "45fab996-586a-400f-9b3f-431c7eab5e27"
       }
     ],
-    "used_designators": "#PWR1-26,C1-11,J1-2,R1-6,U1-3,Y1",
+    "used_designators": "#FLG1-3,#PWR1-40,C1-14,FID1-4,H1,J1-2,MH2-4,R1-8,U1-5,Y1",
     "variants": []
   },
   "sheets": [
