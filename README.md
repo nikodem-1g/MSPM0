@@ -8,11 +8,12 @@ Design complete with clean ERC and DRC; not planned for fabrication.
 
 ![Layout](docs/render.png)
 
-The symbol and footprint for MSPM0 were created from its datasheet because no suitable library entry existed. Power supply, decoupling and clock circuitry follow the manufacturer's datasheet recommendations. The board uses a ground fill with stiching vias, and four M3 mounting holes with fiducials
 
 ## Schematic
 
 ![Schematic](docs/TI-MSPM0.svg)
+
+The symbol and footprint for MSPM0 were created from its datasheet because no suitable library entry existed. Power supply, decoupling and clock circuitry follow the manufacturer's datasheet recommendations. The board uses a ground fill with stiching vias, and four M3 mounting holes with fiducials
 
 
 ## Repository contents
